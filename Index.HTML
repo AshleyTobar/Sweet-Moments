@@ -1,0 +1,487 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sweet Moments - Pastelería artesanal con diseños únicos para cada ocasión.">
+  <title>Sweet Moments | Pastelería</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav-container">
+
+      <a href="#" class="logo">
+        <span class="logo-icon">🧁</span>
+        <span>
+          <strong>Sweet Moments</strong>
+          <small>PASTELERÍA & MÁS</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#inicio" class="nav-link active">Inicio</a>
+        <a href="#menu" class="nav-link">Menú</a>
+        <a href="#ofertas" class="nav-link">Ofertas</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Buscar">
+          <span>⌕</span>
+        </button>
+
+        <button class="icon-btn cart-btn" id="cartBtn" aria-label="Abrir carrito">
+          <span>🛒</span>
+          <b id="cartCount">0</b>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- BUSCADOR -->
+  <div class="search-panel" id="searchPanel">
+    <div class="container search-inner">
+      <input type="search" id="searchInput" placeholder="Busca tu postre favorito...">
+      <button id="closeSearch">✕</button>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+
+        <div class="hero-text">
+          <span class="eyebrow">✦ HECHO CON AMOR ✦</span>
+
+          <h1>Postres que<br><em>hacen la vida</em><br>más dulce.</h1>
+
+          <p>
+            Diseños únicos, sabores irresistibles y el toque perfecto
+            para cada ocasión.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#menu" class="btn btn-primary">Ver nuestro menú <span>→</span></a>
+            <a href="#nosotros" class="btn btn-outline">Conócenos</a>
+          </div>
+
+          <div class="hero-note">
+            <span>♡</span>
+            <p>Pequeños momentos,<br>grandes sonrisas.</p>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="hero-decoration decoration-one">✦</div>
+          <div class="hero-decoration decoration-two">♡</div>
+          <div class="hero-decoration decoration-three">✧</div>
+
+          <div class="hero-circle"></div>
+
+          <img src="img/hero-cake.jpg" alt="Pastel decorado con fresas y flores">
+          <div class="hero-label">
+            <span>Hecho</span>
+            <strong>con amor</strong>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero-wave"></div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="benefits">
+      <div class="container benefits-grid">
+
+        <div class="benefit-item">
+          <div class="benefit-icon pink">🧁</div>
+          <div>
+            <h3>Diseños personalizados</h3>
+            <p>Tu idea, nuestro toque dulce.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon yellow">♡</div>
+          <div>
+            <h3>Ingredientes de calidad</h3>
+            <p>Elaborados con mucho cariño.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon green">🚚</div>
+          <div>
+            <h3>Pedidos especiales</h3>
+            <p>Para tus momentos importantes.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon purple">🎁</div>
+          <div>
+            <h3>Descuentos y ofertas</h3>
+            <p>Siempre hay algo dulce para ti.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MENÚ -->
+    <section class="menu-section section-padding" id="menu">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">✦ DESCUBRE NUESTROS SABORES ✦</span>
+          <h2>Nuestros postres <em>favoritos</em></h2>
+          <p>Encuentra ese dulce especial para cada ocasión.</p>
+        </div>
+
+        <div class="category-tabs">
+          <button class="category-btn active" data-category="todos">Todos</button>
+          <button class="category-btn" data-category="pasteles">Pasteles</button>
+          <button class="category-btn" data-category="cupcakes">Cupcakes</button>
+          <button class="category-btn" data-category="macarons">Macarons</button>
+          <button class="category-btn" data-category="cheesecakes">Cheesecakes</button>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+
+          <!-- PRODUCTO 1 -->
+          <article class="product-card" data-category="pasteles" data-name="Pastel de fresa">
+            <div class="product-image">
+              <img src="img/strawberry-cake.jpg" alt="Pastel de fresa">
+              <span class="product-tag">Favorito</span>
+              <button class="favorite-btn" aria-label="Agregar a favoritos">♡</button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">PASTELES</span>
+              <h3>Pastel de Fresa</h3>
+              <p>Bizcocho suave, crema y fresas frescas.</p>
+              <div class="product-bottom">
+                <strong>$18.00</strong>
+                <button class="add-cart" data-name="Pastel de Fresa" data-price="18.00">+</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUCTO 2 -->
+          <article class="product-card" data-category="cupcakes" data-name="Cupcakes de vainilla">
+            <div class="product-image">
+              <img src="img/vanilla-cupcake.jpg" alt="Cupcakes de vainilla">
+              <button class="favorite-btn" aria-label="Agregar a favoritos">♡</button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">CUPCAKES</span>
+              <h3>Cupcakes de Vainilla</h3>
+              <p>Suaves, cremosos y perfectos para compartir.</p>
+              <div class="product-bottom">
+                <strong>$3.50 <small>c/u</small></strong>
+                <button class="add-cart" data-name="Cupcakes de Vainilla" data-price="3.50">+</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUCTO 3 -->
+          <article class="product-card" data-category="pasteles" data-name="Pastel de chocolate">
+            <div class="product-image">
+              <img src="img/chocolate-cake.jpg" alt="Pastel de chocolate">
+              <button class="favorite-btn" aria-label="Agregar a favoritos">♡</button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">PASTELES</span>
+              <h3>Pastel de Chocolate</h3>
+              <p>Chocolate intenso con un acabado delicioso.</p>
+              <div class="product-bottom">
+                <strong>$16.00</strong>
+                <button class="add-cart" data-name="Pastel de Chocolate" data-price="16.00">+</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUCTO 4 -->
+          <article class="product-card" data-category="macarons" data-name="Macarons">
+            <div class="product-image">
+              <img src="img/macarons.jpg" alt="Macarons pastel">
+              <span class="product-tag">Nuevo</span>
+              <button class="favorite-btn" aria-label="Agregar a favoritos">♡</button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">MACARONS</span>
+              <h3>Macarons Pastel</h3>
+              <p>Pequeños bocados con sabores irresistibles.</p>
+              <div class="product-bottom">
+                <strong>$2.00 <small>c/u</small></strong>
+                <button class="add-cart" data-name="Macarons Pastel" data-price="2.00">+</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUCTO 5 -->
+          <article class="product-card" data-category="cheesecakes" data-name="Cheesecake de frutos rojos">
+            <div class="product-image">
+              <img src="img/strawberry-cake.jpg" alt="Cheesecake de frutos rojos">
+              <button class="favorite-btn" aria-label="Agregar a favoritos">♡</button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">CHEESECAKES</span>
+              <h3>Cheesecake de Frutos Rojos</h3>
+              <p>Textura cremosa y frutos frescos.</p>
+              <div class="product-bottom">
+                <strong>$16.00</strong>
+                <button class="add-cart" data-name="Cheesecake de Frutos Rojos" data-price="16.00">+</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUCTO 6 -->
+          <article class="product-card" data-category="cupcakes" data-name="Cupcakes de chocolate">
+            <div class="product-image">
+              <img src="img/chocolate-cake.jpg" alt="Cupcakes de chocolate">
+              <button class="favorite-btn" aria-label="Agregar a favoritos">♡</button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">CUPCAKES</span>
+              <h3>Cupcakes de Chocolate</h3>
+              <p>Un clásico que nunca falla.</p>
+              <div class="product-bottom">
+                <strong>$3.50 <small>c/u</small></strong>
+                <button class="add-cart" data-name="Cupcakes de Chocolate" data-price="3.50">+</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="menu-bottom">
+          <p>¿Buscas algo diferente?</p>
+          <a href="#contacto" class="text-link">Cuéntanos tu idea <span>→</span></a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- OFERTAS -->
+    <section class="promo-section section-padding" id="ofertas">
+      <div class="container">
+
+        <div class="promo-card">
+          <div class="promo-text">
+            <span class="eyebrow">✦ OFERTA ESPECIAL ✦</span>
+            <h2>Un dulce detalle<br>para <em>cualquier ocasión.</em></h2>
+            <p>
+              Disfruta nuestros postres favoritos con descuentos
+              especiales por tiempo limitado.
+            </p>
+            <a href="#menu" class="btn btn-primary">Ver ofertas <span>→</span></a>
+          </div>
+
+          <div class="promo-image">
+            <img src="img/strawberry-cake.jpg" alt="Pastel de celebración">
+            <div class="discount-badge">
+              <small>HASTA</small>
+              <strong>-20%</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="about-section section-padding" id="nosotros">
+      <div class="container about-grid">
+
+        <div class="about-image">
+          <img src="img/hero-cake.jpg" alt="Pastelería artesanal">
+          <div class="about-sticker">
+            <span>♡</span>
+            <strong>Hecho con amor</strong>
+            <small>desde el primer batido</small>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <span class="eyebrow">✦ SOBRE NOSOTROS ✦</span>
+          <h2>Endulzamos tus<br><em>momentos especiales.</em></h2>
+          <p>
+            En Sweet Moments creemos que cada ocasión merece un
+            postre especial. Creamos pasteles, cupcakes y dulces
+            con diseños únicos, ingredientes de calidad y mucho amor.
+          </p>
+          <p>
+            Desde una pequeña celebración hasta ese gran momento
+            que siempre recordarás, queremos ser parte de tu historia.
+          </p>
+
+          <a href="#contacto" class="text-link">Conoce más sobre nosotros <span>→</span></a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact-section section-padding" id="contacto">
+      <div class="container contact-grid">
+
+        <div class="contact-info">
+          <span class="eyebrow">✦ VISÍTANOS ✦</span>
+          <h2>Hablemos de algo<br><em>delicioso.</em></h2>
+          <p>¿Tienes una idea para tu próximo postre? Estamos aquí para ayudarte.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <span>📍</span>
+              <div>
+                <strong>Ubicación</strong>
+                <p>San Salvador, El Salvador</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span>📞</span>
+              <div>
+                <strong>Teléfono</strong>
+                <p>+503 7123-4567</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span>🕒</span>
+              <div>
+                <strong>Horario</strong>
+                <p>Lunes a domingo · 8:00 AM - 6:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <h3>¿Tienes alguna pregunta?</h3>
+          <p>Escríbenos y te responderemos pronto.</p>
+
+          <form id="contactForm">
+            <div class="form-row">
+              <input type="text" placeholder="Tu nombre" required>
+              <input type="email" placeholder="Tu correo" required>
+            </div>
+            <textarea placeholder="Cuéntanos qué necesitas..." rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary">Enviar mensaje <span>→</span></button>
+          </form>
+
+          <p class="form-message" id="formMessage"></p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-icon">🧁</span>
+          <span>
+            <strong>Sweet Moments</strong>
+            <small>PASTELERÍA & MÁS</small>
+          </span>
+        </a>
+        <p>Postres que hacen la vida más dulce.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Explora</h4>
+        <a href="#menu">Nuestro menú</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#nosotros">Nosotros</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Ayuda</h4>
+        <a href="#contacto">Contacto</a>
+        <a href="#contacto">Preguntas frecuentes</a>
+        <a href="#contacto">Pedidos especiales</a>
+      </div>
+
+      <div class="footer-social">
+        <h4>Síguenos</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="TikTok">♪</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Sweet Moments. Todos los derechos reservados.</p>
+      <p>Hecho con ♡ y mucho azúcar.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL DEL CARRITO -->
+  <div class="modal-overlay" id="cartModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h2>Tu carrito 🛒</h2>
+        <button class="modal-close" id="closeCart">✕</button>
+      </div>
+
+      <div class="cart-items" id="cartItems">
+        <p class="empty-cart">Tu carrito está vacío.</p>
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <strong id="cartTotal">$0.00</strong>
+        </div>
+        <button class="btn btn-primary checkout-btn" id="checkoutBtn">Realizar pedido →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL DE DETALLES -->
+  <div class="modal-overlay" id="productModal">
+    <div class="modal product-modal">
+      <button class="modal-close" id="closeProduct">✕</button>
+      <div class="product-modal-content">
+        <img id="modalProductImage" src="" alt="">
+        <div class="modal-product-info">
+          <span class="product-category" id="modalProductCategory"></span>
+          <h2 id="modalProductName"></h2>
+          <p id="modalProductDescription"></p>
+          <strong class="modal-price" id="modalProductPrice"></strong>
+          <button class="btn btn-primary" id="modalAddCart">Agregar al carrito →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
